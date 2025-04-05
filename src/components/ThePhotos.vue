@@ -13,10 +13,10 @@
     </div>
     <div class="p-4">
       <el-carousel 
-        :interval="6000" 
+        :interval="3000" 
         :type="sizeScreen > 645 ? 'card' : null" 
         height="500px" 
-        :autoplay="false" 
+        :autoplay="true"
         indicator-position="none"
         arrow="always">
         <el-carousel-item v-for="(photo, index) in 10" :key="photo">
@@ -27,7 +27,8 @@
       </el-carousel>
     </div>
     <div class="h-[120px] md:h-[220px] flex items-start -mt-2"> 
-      <img class="" src="../assets/images/separator-lines.png" alt="">
+      <img class="hidden md:block" src="../assets/images/separator-lines.png" alt="">
+      <img class="block md:hidden" src="../assets/images/separator-lines-mobile.png" alt="">
     </div>
   </section>
 </template>

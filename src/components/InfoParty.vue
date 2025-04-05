@@ -104,7 +104,7 @@ const goToUrl = () => {
   </section>
 
   <el-dialog v-model="dressCodeDialog" title="" center>
-    <p class=" text-primary-100 text-3xl font-cookie text-center mt-28 mb-4">Código de vestuario</p>
+    <p class=" text-primary-100 text-3xl font-cookie text-center mt-20 lg:mt-28 lg:mb-4">Código de vestuario</p>
     <div class="mx-auto w-10/12 text-center">
       <span class="font-cookie text-2xl text-yellow-100">Mujeres:</span>
       <p> Traje formal (Vestido largo, enterizo)</p>
@@ -126,23 +126,23 @@ const goToUrl = () => {
       </div>
       <div v-else-if="error">{{ error }}</div>
       <div v-else>
-        <p class="font-cookie text-3xl text-primary-100 mt-28 text-center">
+        <p class="font-cookie text-3xl text-primary-100 mt-24 text-center">
           {{ guestName }} <br>
         </p>
-        <p class="text-center mb-4">
+        <p class="text-center mb-1 lg:mb-4 pl-8 lg:pl-0">
           Deseas confirmar asistencia?
         </p>
         <el-form :model="form" label-width="auto" style="max-width: 600px">
           <div class="flex justify-center">
             <el-form-item>
               <el-radio-group v-model="form.attendance">
-                <el-radio value="si">Si! Confirmo </el-radio>
-                <el-radio value="No">No puedo :(  </el-radio>
+                <el-radio value="si">Si! Confirmo</el-radio>
+                <el-radio value="No">No puedo</el-radio>
               </el-radio-group>
             </el-form-item>
           </div>
           <div class="md:w-1/2 flex flex-col justify-center items-center mx-auto">
-            <p class="text-center mb-4">¿Algún dato importante?<br>  Ej: Soy vegetariano</p>
+            <p class="text-sm text-center mb-1 lg:mb-4">¿Algún dato importante?<br>  Ej: Soy vegetariano</p>
             <el-form-item>
               <el-input v-model="form.comment" type="textarea" />
             </el-form-item>

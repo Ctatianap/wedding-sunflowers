@@ -11,8 +11,12 @@ html, body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   height: 100vh;
-  background: url('../assets/images/background.png') no-repeat center center fixed; /* Ajusta la ruta */
-  background-size: cover; 
+  width: 100vw;
+  background: url('../assets/images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 body {
   overflow-x: hidden; 

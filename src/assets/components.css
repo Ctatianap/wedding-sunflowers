@@ -56,6 +56,7 @@
     background-color: transparent !important;
 }
 
+
 .separator-footer {
     margin-top: -150px;
     @apply -mt-[77px] md:-mt-[85px]
@@ -68,13 +69,13 @@
 .el-dialog {
     background: transparent !important;
     background: url('../assets/images/heart-modal.png') no-repeat center center !important;
-    background-size: cover; 
+    background-size: cover !important;
     box-shadow: none !important;
     --el-dialog-box-shadow:none;
-    @apply w-full h-full max-w-[565px] max-h-[495px]
+    @apply w-full h-full max-w-[565px] max-h-[495px] md:max-w-[565px] md:max-h-[495px] sm:max-w-[400px] sm:max-h-[350px]
 }
 .el-dialog--center {
-    @apply w-full h-full max-w-[565px] max-h-[495px]
+    @apply w-full h-full max-w-[565px] max-h-[495px] md:max-w-[565px] md:max-h-[495px] sm:max-w-[400px] sm:max-h-[350px]
 }
 
 .el-dialog__body{
@@ -107,16 +108,18 @@
 }
 
 .el-icon svg {
-    color: #b29db2 !important;
+    color: #5e3d01 !important;
+    font-size: 24px !important;
+    stroke-width: 2px !important;
 }
 
 .el-radio__input.is-checked .el-radio__inner {
-    background: #b29db2 !important;
-    border-color: #b29db2 !important;
+    background: #e8c17a !important;
+    border-color: #e8c17a !important;
 }
 
 .el-radio__input.is-checked+.el-radio__label {
-    color: #b29db2 !important;
+    color: #e8c17a !important;
 }
 
 .el-loading-mask {
