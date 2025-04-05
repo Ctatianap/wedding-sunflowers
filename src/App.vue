@@ -23,10 +23,10 @@
 </script>
 
 <template>
-  <!-- <div v-if="showSectionCode">
+  <div v-if="showSectionCode">
     <TheCode @dataReceiveds="showInvitation"/>
-  </div> -->
-  <div>
+  </div>
+  <div v-else>
     <FloatingMusic />
     <ThePortada msg="Por encima de todo, vístanse de amor, que es el vinculo perfecto."/>
     <CountdownClock/>
