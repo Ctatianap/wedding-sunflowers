@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+.border-gradient{
+    border-image: linear-gradient(to right, #d1ab4a, #e3d988, #aa863d) 1;
+    border-bottom-width: 3px;
+}
+.bg-union{
+    background-color: rgba(248, 250, 252, 0.557);
+}
+.banner-opacity {
+    height: 100%;
+    background-color: rgba(8, 8, 7, 0.23); /* Color opalizado negro */
+
+}
+.box-bride-and-groom-names {
+    @apply -mt-[77px] md:-mt-[180px]
+}
+
+.box-bride-and-groom-names p {
+    font-weight: 400;
+    font-style: normal;
+    @apply font-cookie
+}
+
+.bg-clock {
+    background: url('../assets/images/heart.png') no-repeat; /* Ajusta la ruta */
+}
+
+.circle-clock {
+    background-color: white;
+    box-shadow: 2px 1px 24px -16px rgba(0,0,0,0.75);
+}
+.clock {
+    display: flex;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-style: normal;
+    
+}
+
+.number {
+    color: #a6a6a6;
+    font-weight: 600;
+}
+
+.separator-countdown {
+    margin-top: -300px;
+}
+
+.separator-lines {
+    @apply -mt-[118px] md:-mt-[150px]
+}
+
+.el-carousel__mask {
+    background-color: transparent !important;
+}
+
+.separator-footer {
+    margin-top: -150px;
+    @apply -mt-[77px] md:-mt-[85px]
+}
+
+.el-overlay{
+    background-color: #a09f7de6 !important;
+}
+
+.el-dialog {
+    background: transparent !important;
+    background: url('../assets/images/heart-modal.png') no-repeat center center !important;
+    background-size: cover; 
+    box-shadow: none !important;
+    --el-dialog-box-shadow:none;
+    @apply w-full h-full max-w-[565px] max-h-[495px]
+}
+.el-dialog--center {
+    @apply w-full h-full max-w-[565px] max-h-[495px]
+}
+
+.el-dialog__body{
+    margin-top: 62px !important;
+}
+@media screen and (max-width: 600px) {
+    .el-dialog {
+        margin: none !important;
+        --el-dialog-width: 100% !important; 
+        @apply w-full h-full max-w-[375px] max-h-[427px]
+    }
+    .el-dialog--center {
+        @apply w-full h-full max-w-[375px] max-h-[427px]
+    }
+}
+
+.el-button{
+    color: #e8c17a !important; 
+    border-color: #e8c17a  !important; 
+}
+.el-button--primary {
+    background-color: #e8c17a !important;
+    border-color: #e8c17a !important;
+    color: rgb(155, 117, 3) !important;
+}
+.el-button:hover{
+    color: #8A9A5B !important; 
+    background-color: rgb(138 154 91 / 26%) !important;
+    border-color: #8A9A5B !important;
+}
+
+.el-icon svg {
+    color: #b29db2 !important;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    background: #b29db2 !important;
+    border-color: #b29db2 !important;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: #b29db2 !important;
+}
+
+.el-loading-mask {
+    background-color: #ffffff00 !important;
+}
+
+.el-loading-spinner .path {
+    stroke-width: 5px !important;
+    stroke: #e3d988 !important
+}

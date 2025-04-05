@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import './base.css';
+@import './components.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100vh;
+  background: url('../assets/images/background.png') no-repeat center center fixed; /* Ajusta la ruta */
+  background-size: cover; 
+}
+body {
+  overflow-x: hidden; 
+}
+
+#app {
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(254, 252, 243);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #82a1a3;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #42635f;
+}
+
