@@ -18,13 +18,12 @@
     showSectionCode.value = false
     guestCode.value = data.Code
     guestName.value = data.Names
-    console.log('Datos recibidos del hijo:', data)
   }
 </script>
 
 <template>
   <div v-if="showSectionCode">
-    <TheCode @dataReceiveds="showInvitation"/>
+    <TheCode @dataReceived="showInvitation"/>
   </div>
   <div v-else>
     <FloatingMusic />

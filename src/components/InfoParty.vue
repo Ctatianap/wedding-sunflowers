@@ -120,7 +120,7 @@ const goToUrl = () => {
   <el-dialog v-model="attendanceDialog" title="" center>
     <div v-loading="loading">
       <div v-if="showThanks" class="text-center">
-        <p class="font-cookie text-3xl text-primary-100 mt-28 mb-6">{{ guestName }}</p>
+        <p class="font-cookie text-3xl text-primary-100 mt-40 mb-6">{{ guestName }}</p>
         <span v-if="form.attendance == 'si'">Gracias por confirmar tu asistencia <br> Te esperamos!</span>
         <span v-else>Sentimos que no puedas acompañarnos<br> Gracias!</span>
       </div>
