@@ -104,16 +104,16 @@ const goToUrl = () => {
   </section>
 
   <el-dialog v-model="dressCodeDialog" title="" center>
-    <p class=" text-primary-100 text-3xl font-cookie text-center mt-20 lg:mt-28 lg:mb-4">Código de vestuario</p>
+    <p class=" text-primary-100 text-4xl font-cookie text-center mt-20 lg:mt-28 lg:mb-4">Código de vestuario</p>
     <div class="mx-auto w-10/12 text-center">
-      <span class="font-cookie text-2xl text-yellow-100">Mujeres:</span>
-      <p> Traje formal (Vestido largo, enterizo)</p>
-      <span class="font-cookie text-2xl text-yellow-100">Hombre:</span>
-      <p class="mb-4">
+      <!-- <span class="font-cookie text-2xl text-yellow-100">Mujeres:</span> -->
+      <p class="text-lg mb-4"> Traje formal</p>
+      <!-- <span class="font-cookie text-2xl text-yellow-100">Hombre:</span> -->
+      <!-- <p class="mb-4">
         Traje formal (Camisa, Pantalón  <br>lino o drill, blazer opcional)
-      </p>
-      <a href="https://co.pinterest.com/search/pins/?rs=ac&len=2&q=ropa%20invitados%20boda&eq=ropa%20invitados&etslf=10298" target="_blank" class="text-xs text-primary-300 mb-4">Mira aquí algunas referencias</a><br>
-      <div class="text-xs text-primary-100 mt-4">Recuerda que el blanco está <br> reservado para la novia</div>
+      </p> -->
+      <a href="https://co.pinterest.com/search/pins/?rs=ac&len=2&q=ropa%20invitados%20boda&eq=ropa%20invitados&etslf=10298" target="_blank" class="text-base text-yellow-100 mb-4">Mira aquí algunas referencias</a><br>
+      <div class="text-gray-400 mt-4">Recuerda que el blanco está <br> reservado para la novia</div>
     </div>
   </el-dialog>
 
@@ -129,7 +129,7 @@ const goToUrl = () => {
         <p class="font-cookie text-3xl text-primary-100 mt-24 text-center">
           {{ guestName }} <br>
         </p>
-        <p class="text-center mb-1 lg:mb-4 pl-8 lg:pl-0">
+        <p class="text-lg text-center lg:mb-4 pl-8 lg:pl-4">
           Deseas confirmar asistencia?
         </p>
         <el-form :model="form" label-width="auto" style="max-width: 600px">
@@ -142,7 +142,7 @@ const goToUrl = () => {
             </el-form-item>
           </div>
           <div class="md:w-1/2 flex flex-col justify-center items-center mx-auto">
-            <p class="text-sm text-center mb-1 lg:mb-4">¿Algún dato importante?<br>  Ej: Soy vegetariano</p>
+            <p class="text-xs text-center mb-1 lg:mb-4">¿Algún dato importante?<br>  Ej: Soy vegetariano, Soy alergíco a ... </p>
             <el-form-item>
               <el-input v-model="form.comment" type="textarea" />
             </el-form-item>

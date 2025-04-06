@@ -17,7 +17,8 @@
   const showInvitation = (data) => {
     showSectionCode.value = false
     guestCode.value = data.Code
-    guestName.value = data.Names
+    guestName.value = data.Name
+    console.log(guestName.value)
   }
 </script>
 
@@ -27,7 +28,7 @@
   </div>
   <div v-else>
     <FloatingMusic />
-    <ThePortada msg="Por encima de todo, vístanse de amor, que es el vinculo perfecto."/>
+    <ThePortada msg="Por encima de todo, vístanse de amor, que es el vínculo perfecto."/>
     <CountdownClock/>
     <ThePhotos />
     <InfoParty :guest-code="guestCode" :guest-name="guestName"/>
